@@ -41,11 +41,11 @@ function Housecard() {
 
     ]
   return (
-    <div className='flex m-7 p-2 px-7 md:px-16'>
+    <div className='flex m-2 p-2 px-4 md:px-10'>
     {productionHouseList.map((item, index) => (
-        <div key={index} className='border-[2px] border-gray shadow-2xl shadow-black mx-4 my-5 rounded-2xl hover:shadow-lg  hover:shadow-gray hover:scale-110 transition-all relative duration-500 ease-in-out cursor-pointer '>
+        <div key={index} className=' border-[2px] border-gray shadow-2xl shadow-black  mx-2 rounded-xl hover:shadow-lg  hover:shadow-gray hover:scale-110 transition-all relative duration-500 ease-in-out cursor-pointer '>
         <video src={item.video} autoPlay loop playsInline muted className='absolute top-0 rounded-2xl z-0 opacity-0 hover:opacity-60'/>  
-        <img src={item.image} className='w-full z-[1] rounded-2xl hover:shadow-lg  hover:shadow-gray ' alt={`Production House ${index}`} />
+        <img src={item.image} className='w-full md:w-full z-[1] rounded-2xl hover:shadow-lg  hover:shadow-gray ' alt={`Production House ${index}`} />
             
         </div>
     ))}
